@@ -9,12 +9,6 @@
 ### 기술스택 
  - Back : SpringBoot , SpringSecurity , Websocket , Jpa , mysql 등등   
 
-### WBS
-
-<details>
- <summary> 클릭하여 보기 </summary>
-</details>
-
 ### ERD
 
 <details>
