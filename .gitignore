@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### yml 분리 ###
+/src/main/resources/application-jwt.yml

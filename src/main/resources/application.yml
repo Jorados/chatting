@@ -1,8 +1,11 @@
-spring:
+spring: # default 프로필 설정
+  config:
+    import: application-jwt.yml # default 프로필에서 jwt.yml 파일을 임포트하여 설정을 가져옵니다.
+
   datasource:
     url: jdbc:mysql://localhost:3306/chatting?serverTimezone=UTC&characterEncoding=UTF-8
     username: root
-    password: cho980625
+    password: cho980625!
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
@@ -12,3 +15,6 @@ spring:
       hibernate:
         #        show_sql: true
         format_sql: true
+
+server:
+  port: 8081

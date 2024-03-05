@@ -5,6 +5,7 @@ import Project.chatting.domain.type.Role;
 import Project.chatting.dto.UserSignUpDto;
 import Project.chatting.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +17,6 @@ import javax.transaction.Transactional;
 public class UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
-
 
     // 자체 로그인, 회원가입 시 사용하는 회원 가입 API의 로직입니다.
     // 자체 로그인이기 때문에 클라이언트 요청에서 age,city 등 추가 정보까지 다 받아와서 Buileder로 추가정보를 포함한
