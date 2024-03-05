@@ -1,5 +1,5 @@
 package Project.chatting;
 
-// 커밋 테스트 - 2
+// 커밋 테스트
 public class test {
 }
